@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Dashboard | RepairShop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- MOBILE NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark d-lg-none">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold" href="../index.html">
+                🔧 RepairShop
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileSidebar"
+                    aria-controls="mobileSidebar"
+                    aria-label="Open navigation menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MOBILE SIDEBAR -->
+    <div class="offcanvas offcanvas-start text-bg-dark d-lg-none"
+         tabindex="-1"
+         id="mobileSidebar">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                🔧 RepairShop
+            </h5>
+
+            <button type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <nav class="nav flex-column gap-2">
+
+                <a href="dashboard.html"
+                   class="nav-link text-white active"
+                   aria-current="page">
+                    📊 Dashboard
+                </a>
+
+                <a href="request-repair.html"
+                   class="nav-link text-white">
+                    🛠️ Request Repair
+                </a>
+
+                <a href="../index.html"
+                   class="nav-link text-white">
+                    🏠 Home
+                </a>
+
+                <a href="../login.html"
+                   class="nav-link text-white">
+                    🚪 Logout (Demo)
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- DASHBOARD LAYOUT -->
+    <div class="dashboard-layout">
+
+        <!-- DESKTOP SIDEBAR -->
+        <aside class="dashboard-sidebar d-none d-lg-flex">
+
+            <a href="../index.html" class="sidebar-brand">
+                🔧 RepairShop
+            </a>
+
+
+            <!-- USER INFORMATION -->
+            <div class="sidebar-user">
+
+                <div class="sidebar-avatar">
+                    A
+                </div>
+
+                <div>
+                    <h6 class="mb-0">
+                        Ali Ahmed
+                    </h6>
+
+                    <small>
+                        Customer Account
+                    </small>
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR MENU -->
+            <nav class="sidebar-menu">
+
+                <a href="dashboard.html"
+                   class="sidebar-link active"
+                   aria-current="page">
+                    📊 <span>Dashboard</span>
+                </a>
+
+                <a href="request-repair.html"
+                   class="sidebar-link">
+                    🛠️ <span>Request Repair</span>
+                </a>
+
+                <a href="../index.html"
+                   class="sidebar-link">
+                    🏠 <span>Home</span>
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+            <div class="sidebar-bottom">
+
+                <a href="../login.html"
+                   class="sidebar-link">
+                    🚪 <span>Logout (Demo)</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="dashboard-main">
+
+            <!-- DASHBOARD HEADER -->
+            <div class="dashboard-header">
+
+                <div>
+
+                    <h2 class="fw-bold mb-1">
+                        Customer Dashboard
+                    </h2>
+
+                    <p class="text-muted mb-0">
+                        Welcome back, Ali! Here's your repair overview.
+                    </p>
+
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <span class="badge bg-primary-subtle text-primary p-2">
+                        Customer
+                    </span>
+
+                    <div class="header-avatar">
+                        A
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STATISTICS CARDS -->
+            <div class="row g-4 mb-4">
+
+                <!-- TOTAL REPAIRS -->
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="card stat-card border-0 shadow-sm h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+
+                                    <p class="text-muted mb-2">
+                                        Total Repairs
+                                    </p>
+
+                                    <h2 class="fw-bold mb-0">
+                                        12
+                                    </h2>
+
+                                </div>
+
+                                <div class="stat-icon bg-primary-subtle">
+                                    📦
+                                </div>
+
+                            </div>
+
+                            <p class="small text-muted mt-3 mb-0">
+                                All submitted requests
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PENDING REPAIRS -->
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="card stat-card border-0 shadow-sm h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+
+                                    <p class="text-muted mb-2">
+                                        Pending
+                                    </p>
+
+                                    <h2 class="fw-bold mb-0">
+                                        3
+                                    </h2>
+
+                                </div>
+
+                                <div class="stat-icon bg-warning-subtle">
+                                    ⏳
+                                </div>
+
+                            </div>
+
+                            <p class="small text-muted mt-3 mb-0">
+                                Awaiting repair
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IN PROGRESS -->
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="card stat-card border-0 shadow-sm h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+
+                                    <p class="text-muted mb-2">
+                                        In Progress
+                                    </p>
+
+                                    <h2 class="fw-bold mb-0">
+                                        4
+                                    </h2>
+
+                                </div>
+
+                                <div class="stat-icon bg-info-subtle">
+                                    🔧
+                                </div>
+
+                            </div>
+
+                            <p class="small text-muted mt-3 mb-0">
+                                Currently being repaired
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMPLETED -->
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="card stat-card border-0 shadow-sm h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+
+                                    <p class="text-muted mb-2">
+                                        Completed
+                                    </p>
+
+                                    <h2 class="fw-bold mb-0">
+                                        5
+                                    </h2>
+
+                                </div>
+
+                                <div class="stat-icon bg-success-subtle">
+                                    ✅
+                                </div>
+
+                            </div>
+
+                            <p class="small text-muted mt-3 mb-0">
+                                Successfully repaired
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEW REPAIR REQUEST -->
+            <div class="card border-0 shadow-sm mb-4 quick-action-card">
+
+                <div class="card-body p-4">
+
+                    <div class="row align-items-center g-3">
+
+                        <div class="col-md-8">
+
+                            <h4 class="fw-bold">
+                                Need to Repair Another Device?
+                            </h4>
+
+                            <p class="text-muted mb-0">
+                                Submit a new repair request and track
+                                its progress from your dashboard.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4 text-md-end">
+
+                            <a href="request-repair.html"
+                               class="btn btn-primary">
+                                + New Repair Request
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECENT REPAIR REQUESTS -->
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-header bg-white border-0 p-4">
+
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+                        <h5 class="fw-bold mb-0">
+                            Recent Repair Requests
+                        </h5>
+
+                        <span class="badge bg-secondary-subtle text-secondary">
+                            Sample Data
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TABLE -->
+                <div class="card-body p-0">
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover align-middle mb-0">
+
+                            <thead class="table-light">
+
+                                <tr>
+                                    <th>Repair ID</th>
+                                    <th>Device</th>
+                                    <th>Issue</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Details</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <!-- REPAIR 1 -->
+                                <tr>
+
+                                    <td class="fw-semibold">
+                                        #REP-1024
+                                    </td>
+
+                                    <td>Dell Laptop</td>
+
+                                    <td>Battery Problem</td>
+
+                                    <td>05 Nov 2026</td>
+
+                                    <td>
+                                        <span class="badge bg-info text-dark">
+                                            In Progress
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="badge bg-light text-secondary border">
+                                            Preview Only
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- REPAIR 2 -->
+                                <tr>
+
+                                    <td class="fw-semibold">
+                                        #REP-1023
+                                    </td>
+
+                                    <td>Samsung Galaxy</td>
+
+                                    <td>Screen Replacement</td>
+
+                                    <td>03 Nov 2026</td>
+
+                                    <td>
+                                        <span class="badge bg-warning text-dark">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="badge bg-light text-secondary border">
+                                            Preview Only
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- REPAIR 3 -->
+                                <tr>
+
+                                    <td class="fw-semibold">
+                                        #REP-1022
+                                    </td>
+
+                                    <td>HP Desktop</td>
+
+                                    <td>Power Supply Issue</td>
+
+                                    <td>01 Nov 2026</td>
+
+                                    <td>
+                                        <span class="badge bg-success">
+                                            Completed
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="badge bg-light text-secondary border">
+                                            Preview Only
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- REPAIR 4 -->
+                                <tr>
+
+                                    <td class="fw-semibold">
+                                        #REP-1021
+                                    </td>
+
+                                    <td>iPhone 12</td>
+
+                                    <td>Charging Port</td>
+
+                                    <td>28 Oct 2026</td>
+
+                                    <td>
+                                        <span class="badge bg-info text-dark">
+                                            In Progress
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="badge bg-light text-secondary border">
+                                            Preview Only
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD FOOTER -->
+            <div class="text-center text-muted small mt-5">
+                © 2026 RepairShop — Customer Portal · Static demonstration
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

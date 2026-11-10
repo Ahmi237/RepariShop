@@ -1,0 +1,538 @@
+
+/* =========================
+   REPAIRSHOP GLOBAL STYLING
+   ========================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #243b53;
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    background: linear-gradient(135deg, #102a43, #1769aa);
+}
+
+.min-vh-50 {
+    min-height: 60vh;
+}
+
+.hero-section p {
+    color: #e0eaf3;
+    line-height: 1.8;
+}
+
+/* SERVICE CARDS */
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* HOW IT WORKS */
+
+.step-number {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: #0d6efd;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+
+.btn {
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-section .btn {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* =========================
+   LOGIN PAGE
+   ========================= */
+
+.login-section {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #f5f9ff,
+        #e7f0fa
+    );
+}
+
+.login-card {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.login-icon {
+    font-size: 55px;
+}
+
+.login-card .form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 15px;
+}
+
+.login-card .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+.login-card .btn-primary {
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.login-card a {
+    color: #0d6efd;
+}
+
+.login-card a:hover {
+    text-decoration: underline !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .login-section {
+        padding: 35px 0;
+    }
+
+    .login-card .card-body {
+        padding: 25px !important;
+    }
+}
+
+/* =========================
+   REGISTRATION PAGE
+   ========================= */
+
+.register-section {
+    min-height: 85vh;
+
+    background: linear-gradient(
+        135deg,
+        #f5f9ff,
+        #e7f0fa
+    );
+}
+
+.register-card {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.register-icon {
+    font-size: 55px;
+}
+
+.register-card .form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 15px;
+}
+
+.register-card .form-control:focus {
+    border-color: #0d6efd;
+
+    box-shadow: 0 0 0 0.2rem
+        rgba(13, 110, 253, 0.12);
+}
+
+.register-card .btn-primary {
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.register-card a {
+    color: #0d6efd;
+}
+
+.register-card a:hover {
+    text-decoration: underline !important;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 576px) {
+
+    .register-card .card-body {
+        padding: 25px !important;
+    }
+
+    .register-section {
+        padding: 35px 0;
+    }
+
+}
+
+/* =========================
+   CUSTOMER DASHBOARD
+   ========================= */
+
+.dashboard-body {
+    background: #f4f7fb;
+}
+
+/* MAIN DASHBOARD LAYOUT */
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.dashboard-sidebar {
+    width: 260px;
+    min-width: 260px;
+    background: #102a43;
+    color: white;
+    flex-direction: column;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 28px 22px;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-brand:hover {
+    color: #ffc107;
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 25px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-user small {
+    color: #b8c9d9;
+}
+
+.sidebar-avatar,
+.header-avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #ffc107;
+    color: #102a43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sidebar-menu {
+    padding: 25px 12px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 9px;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: #1b496d;
+    color: white;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding: 15px 12px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* MAIN CONTENT */
+
+.dashboard-main {
+    flex: 1;
+    min-width: 0;
+    padding: 35px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* STATISTICS */
+
+.stat-card {
+    border-radius: 14px;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* QUICK ACTION */
+
+.quick-action-card {
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+/* TABLE */
+
+.dashboard-main .table th,
+.dashboard-main .table td {
+    padding: 17px 20px;
+    white-space: nowrap;
+}
+
+.dashboard-main .table th {
+    color: #63758a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dashboard-main .table td {
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 991px) {
+
+    .dashboard-layout {
+        display: block;
+    }
+
+    .dashboard-main {
+        padding: 25px 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .dashboard-header {
+        align-items: flex-start;
+    }
+
+    .dashboard-header h2 {
+        font-size: 23px;
+    }
+
+    .dashboard-header .header-avatar {
+        display: none;
+    }
+
+    .dashboard-main {
+        padding: 20px 12px;
+    }
+
+}
+
+/* =========================
+   REPAIR REQUEST FORM
+   ========================= */
+
+.dashboard-main .form-control,
+.dashboard-main .form-select {
+    border-radius: 9px;
+    border: 1px solid #dce4ec;
+    font-size: 15px;
+}
+
+.dashboard-main .form-control:focus,
+.dashboard-main .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.1);
+}
+
+.dashboard-main .card {
+    border-radius: 14px;
+}
+
+.dashboard-main textarea {
+    resize: vertical;
+}
+
+.dashboard-main .form-label {
+    color: #243b53;
+    font-size: 14px;
+}
+
+.dashboard-main .alert {
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .dashboard-main .btn-lg {
+        font-size: 15px;
+        padding: 11px 16px;
+    }
+}
+
+/* =========================
+   ADMIN DASHBOARD
+   ========================= */
+
+/* Repair management section */
+
+#repair-management {
+    scroll-margin-top: 25px;
+    border-radius: 14px;
+}
+
+/* Table badges */
+
+#repair-management .badge {
+    font-size: 12px;
+    padding: 8px 11px;
+    font-weight: 500;
+}
+
+/* Table buttons */
+
+#repair-management .btn {
+    border-radius: 7px;
+    padding: 6px 15px;
+}
+
+/* Progress bars */
+
+.dashboard-main .progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #edf1f5;
+}
+
+.dashboard-main .progress-bar {
+    border-radius: 10px;
+}
+
+/* Technician overview */
+
+.dashboard-main .card-body h6 {
+    font-size: 15px;
+}
+
+/* Repair details modal */
+
+#repairModal .modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#repairModal .modal-header {
+    background: #102a43;
+    color: white;
+    padding: 20px 25px;
+}
+
+#repairModal .modal-header .btn-close {
+    filter: invert(1);
+}
+
+#repairModal .modal-body {
+    padding: 25px;
+}
+
+#repairModal .modal-footer {
+    padding: 15px 25px;
+}
+
+#repairModal .modal-body p {
+    margin-bottom: 14px;
+    color: #34495e;
+}
+
+/* Mobile layout */
+
+@media (max-width: 576px) {
+
+    #repair-management .card-header {
+        padding: 20px !important;
+    }
+
+    .dashboard-main .stat-card h2 {
+        font-size: 26px;
+    }
+
+}
